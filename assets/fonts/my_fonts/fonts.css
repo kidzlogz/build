@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell-BoldItalic.woff2') format('woff2'),
+        url('Rockwell-BoldItalic.woff') format('woff'),
+        url('Rockwell-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rockwell Condensed';
+    src: url('Rockwell-Condensed.woff2') format('woff2'),
+        url('Rockwell-Condensed.woff') format('woff'),
+        url('Rockwell-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell-Italic.woff2') format('woff2'),
+        url('Rockwell-Italic.woff') format('woff'),
+        url('Rockwell-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rockwell Condensed';
+    src: url('Rockwell-Condensed_1.woff2') format('woff2'),
+        url('Rockwell-Condensed_1.woff') format('woff'),
+        url('Rockwell-Condensed_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url('AgencyFB-Reg.woff2') format('woff2'),
+        url('AgencyFB-Reg.woff') format('woff'),
+        url('AgencyFB-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url('AgencyFB-Bold.woff2') format('woff2'),
+        url('AgencyFB-Bold.woff') format('woff'),
+        url('AgencyFB-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell Condensed';
+    src: url('Rockwell-CondensedBold.woff2') format('woff2'),
+        url('Rockwell-CondensedBold.woff') format('woff'),
+        url('Rockwell-CondensedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bauhaus 93';
+    src: url('Bauhaus93.woff2') format('woff2'),
+        url('Bauhaus93.woff') format('woff'),
+        url('Bauhaus93.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Algerian';
+    src: url('Algerian.woff2') format('woff2'),
+        url('Algerian.woff') format('woff'),
+        url('Algerian.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell.woff2') format('woff2'),
+        url('Rockwell.woff') format('woff'),
+        url('Rockwell.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell Extra';
+    src: url('Rockwell-ExtraBold.woff2') format('woff2'),
+        url('Rockwell-ExtraBold.woff') format('woff'),
+        url('Rockwell-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palace Script MT';
+    src: url('PalaceScriptMT.woff2') format('woff2'),
+        url('PalaceScriptMT.woff') format('woff'),
+        url('PalaceScriptMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell_1.woff2') format('woff2'),
+        url('Rockwell_1.woff') format('woff'),
+        url('Rockwell_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Algerian';
+    src: url('Algerian_1.woff2') format('woff2'),
+        url('Algerian_1.woff') format('woff'),
+        url('Algerian_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell-BoldItalic_1.woff2') format('woff2'),
+        url('Rockwell-BoldItalic_1.woff') format('woff'),
+        url('Rockwell-BoldItalic_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Palace Script MT';
+    src: url('PalaceScriptMT_1.woff2') format('woff2'),
+        url('PalaceScriptMT_1.woff') format('woff'),
+        url('PalaceScriptMT_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stencil';
+    src: url('Stencil.woff2') format('woff2'),
+        url('Stencil.woff') format('woff'),
+        url('Stencil.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url('AgencyFB-Bold_1.woff2') format('woff2'),
+        url('AgencyFB-Bold_1.woff') format('woff'),
+        url('AgencyFB-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell Condensed';
+    src: url('Rockwell-CondensedBold_1.woff2') format('woff2'),
+        url('Rockwell-CondensedBold_1.woff') format('woff'),
+        url('Rockwell-CondensedBold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell-Italic_1.woff2') format('woff2'),
+        url('Rockwell-Italic_1.woff') format('woff'),
+        url('Rockwell-Italic_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stencil';
+    src: url('Stencil_1.woff2') format('woff2'),
+        url('Stencil_1.woff') format('woff'),
+        url('Stencil_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bauhaus 93';
+    src: url('Bauhaus93_1.woff2') format('woff2'),
+        url('Bauhaus93_1.woff') format('woff'),
+        url('Bauhaus93_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell-Bold.woff2') format('woff2'),
+        url('Rockwell-Bold.woff') format('woff'),
+        url('Rockwell-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Broadway';
+    src: url('Broadway.woff2') format('woff2'),
+        url('Broadway.woff') format('woff'),
+        url('Broadway.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url('AgencyFB-Reg_1.woff2') format('woff2'),
+        url('AgencyFB-Reg_1.woff') format('woff'),
+        url('AgencyFB-Reg_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell Extra';
+    src: url('Rockwell-ExtraBold_1.woff2') format('woff2'),
+        url('Rockwell-ExtraBold_1.woff') format('woff'),
+        url('Rockwell-ExtraBold_1.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Broadway';
+    src: url('Broadway_1.woff2') format('woff2'),
+        url('Broadway_1.woff') format('woff'),
+        url('Broadway_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell-Bold_1.woff2') format('woff2'),
+        url('Rockwell-Bold_1.woff') format('woff'),
+        url('Rockwell-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
