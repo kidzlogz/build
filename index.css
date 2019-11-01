@@ -170,21 +170,60 @@ textarea {
   user-select: initial;
   user-focus: initial;
 }
-.link,
-.icon {
+.app .link,
+.app .icon {
   cursor: pointer;
   vertical-align: baseline;
 }
 .link:hover {
   text-decoration: underline;
 }
+.app .link:active,
+.app .icon:active {
+  text-decoration: underline;
+}
 .link i {
   font-style: oblique;
 }
+.app input {
+  box-shadow: -1px 1px 1px 1px #808080;
+  border: 1px solid #000;
+  margin: 2.5px;
+  background-color: #d3d3d3;
+}
+.app input:focus,
+.app input.validated {
+  box-shadow: -1px 1px 1px 1px #008adb;
+  border: 1px solid #000;
+  margin: 2.5px;
+  background-color: #0aa1ff;
+}
+.app input.invalid {
+  box-shadow: -1px 1px 1px 1px #ffab22;
+  border: 1px solid #000;
+  margin: 2.5px;
+  background-color: $color;
+}
+/*
+.app .link, .app .icon
+	text-shadow -2px -1px 5px $colorActiveBcg
+.app .menu-nav .link::before
+	content '‣'
+	font-size 1.5em
+	padding-right 0.15em
+	color $colorActiveFont
+	font-weight 700
+	text-decoration none
+.app .menu-nav .link:hover::before
+	text-decoration none
+.app .filter-min-max-date .link::before,
+.app summary .link::before
+	display none
+*/
 .disabled {
   pointer-events: none;
-  opacity: 0.5;
   filter: greyscale(1);
+  opacity: 0.45;
 }
 ul {
   list-style: none;
@@ -197,7 +236,7 @@ ul {
 }
 .blurred {
   filter: grayscale(1);
-  opacity: 0.6;
+  opacity: 0.5;
   pointer-events: none;
 }
 body {
@@ -407,12 +446,16 @@ body {
 .menu {
   padding: 10px;
   overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   flex-basis: calc(100% - 2 * 10px);
   justify-content: flex-start;
   align-items: flex-start;
+}
+.menu-nav {
+  width: 100%;
 }
 .menu-nav-options-parent,
 .menu-nav-options-parent-summary,
@@ -453,6 +496,14 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-basis: 50%;
+  font-size: 0.85em;
+}
+.filters-min-max-date {
+  width: 100%;
+}
+.filter-min-max-date input {
+  flex-grow: 1;
+  max-width: fit-content;
 }
 .filter-min-max-date label,
 .filter-min-max-date input {
@@ -505,6 +556,9 @@ body {
 .menu-share-pin button {
   padding: 5px;
 }
+/*.toggler input[type="checkbox"]
+	width 1em
+	height 1em*/
 .menu-widget-toggler .toggler {
   display: flex;
   flex-wrap: nowrap;
@@ -523,7 +577,7 @@ body {
 }
 .toggler-on .toggler {
   flex-direction: row;
-  background-color: #1e90ff;
+  background-color: #0aa1ff;
 }
 .toggler-off .toggler {
   flex-direction: row-reverse;
