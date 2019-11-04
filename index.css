@@ -189,6 +189,8 @@ textarea {
 .app .icon:active {
   text-decoration: underline;
 }
+.link,
+.btn,
 .link i {
   font-style: oblique;
 }
@@ -201,11 +203,10 @@ ul {
   opacity: 0.5;
   pointer-events: none;
 }
-.disabled::after,
-.blurred::after {
-  content: '⠀🛠';
-  display: inline;
-}
+/*.disabled::after,
+.blurred::after
+	content '⠀🛠'
+	display inline*/
 body {
   display: block;
   background-color: #000;
