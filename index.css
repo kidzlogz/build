@@ -164,6 +164,13 @@ template {
   line-height: 100%;
   user-select: none;
   user-focus: none;
+  margin: 1.25px;
+}
+.header,
+.menu,
+.control-panel,
+.main {
+  margin: 0;
 }
 input,
 textarea {
@@ -185,59 +192,19 @@ textarea {
 .link i {
   font-style: oblique;
 }
-.app input {
-  box-shadow: -1px 1px 1px 1px #808080;
-  border: 1px solid #000;
-  margin: 2.5px;
-  background-color: #d3d3d3;
-}
-.app input:focus,
-.app input.validated {
-  box-shadow: -1px 1px 1px 1px #008adb;
-  border: 1px solid #000;
-  margin: 2.5px;
-  background-color: #0aa1ff;
-}
-.app input.invalid {
-  box-shadow: -1px 1px 1px 1px #ffab22;
-  border: 1px solid #000;
-  margin: 2.5px;
-  background-color: $color;
-}
-/*
-.app .link, .app .icon
-	text-shadow -2px -1px 5px $colorActiveBcg
-.app .menu-nav .link::before
-	content '‣'
-	font-size 1.5em
-	padding-right 0.15em
-	color $colorActiveFont
-	font-weight 700
-	text-decoration none
-.app .menu-nav .link:hover::before
-	text-decoration none
-.app .filter-min-max-date .link::before,
-.app summary .link::before
-	display none
-*/
-.disabled {
-  pointer-events: none;
-  filter: greyscale(1);
-  opacity: 0.45;
-}
 ul {
   list-style: none;
 }
-.validated {
-  border: 1px solid transparent;
-}
-.invalid {
-  border: 1px solid #f00;
-}
+.disabled,
 .blurred {
   filter: grayscale(1);
   opacity: 0.5;
   pointer-events: none;
+}
+.disabled::after,
+.blurred::after {
+  content: '⠀🛠';
+  display: inline;
 }
 body {
   display: block;
@@ -276,6 +243,18 @@ body {
 .app .menu {
   position: relative;
 }
+.app .menu {
+  border-right: 5px solid #000;
+}
+.app .control-panel {
+  border-bottom: 5px solid #000;
+}
+.portrait .app .menu {
+  border-right: none;
+}
+.portrait .app .control-panel {
+  border-bottom: none;
+}
 .app .header,
 .app .control-panel {
   width: 100%;
@@ -292,8 +271,8 @@ body {
   height: 50px;
 }
 .app .menu {
-  width: 12.5%;
-  max-width: 12.5%;
+  width: 19%;
+  max-width: 19%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -301,8 +280,8 @@ body {
   align-items: flex-start;
 }
 .app .main {
-  width: 87.5%;
-  max-width: 87.5%;
+  width: 80%;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -404,6 +383,15 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+.control-panel-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
 .burger-wrapper {
   flex-direction: column;
   flex-wrap: nowrap;
@@ -453,9 +441,11 @@ body {
   flex-basis: calc(100% - 2 * 10px);
   justify-content: flex-start;
   align-items: flex-start;
+  max-height: calc(100vh - 2 * 50px);
 }
 .menu-nav {
   width: 100%;
+  height: auto;
 }
 .menu-nav-options-parent,
 .menu-nav-options-parent-summary,
@@ -531,11 +521,11 @@ body {
   margin-top: 30px;
 }
 .menu-share,
-.menu-share-pin {
+.menu-share > * {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .app.v .menu-share,
@@ -545,20 +535,51 @@ body {
 .menu-share-pin {
   justify-content: flex-start;
   margin-top: 5px;
+  flex-grow: 1;
 }
 .menu-share-pin input {
-  width: 75px;
   min-width: 75px;
-  max-width: 75px;
+  flex-grow: 1;
   margin-left: 5px;
   margin-right: 5px;
 }
 .menu-share-pin button {
   padding: 5px;
 }
-/*.toggler input[type="checkbox"]
-	width 1em
-	height 1em*/
+.app input {
+  border: 1px solid #000;
+  background-color: #0aa1ff;
+  color: #fff;
+}
+.app input:active,
+.app input:focus {
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+.app .btn {
+  display: block;
+  width: fit-content;
+  min-width: 50px;
+  max-width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  align-self: center;
+  padding: 5px;
+  border: 1px solid #000;
+  background-color: #0aa1ff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85em;
+  border-radius: 5px;
+}
+.app *.invalid {
+  border: 1px solid #ff3200;
+  color: #f00;
+}
 .menu-widget-toggler .toggler {
   display: flex;
   flex-wrap: nowrap;
